@@ -186,3 +186,9 @@ model.pkl
 tfidf_vectorizer.pkl
 history.db
 project_screenshots/
+
+tfidf_model.pkl
+model.pkl
+history.db
+venv/
+__pycache__/
