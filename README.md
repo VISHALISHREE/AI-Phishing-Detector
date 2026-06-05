@@ -104,27 +104,28 @@ Classification Categories:
 
 ### Dashboard
 
-![Dashboard](./project_screenshots/dashboard_page.png)
+<img width="1598" height="728" alt="dashboard_page" src="https://github.com/user-attachments/assets/c2666d22-a07d-4305-8851-ce1b3ce1d24c" />
 
 ### Analytics
 
-![Analytics](./project_screenshots/analytics_page.png)
+<img width="1599" height="729" alt="analytics_page" src="https://github.com/user-attachments/assets/af5361d3-ec31-4fe5-a293-32e484099d3d" />
 
 ### Search History
 
-![Search History](./project_screenshots/search_history.png)
+<img width="1599" height="729" alt="search_history" src="https://github.com/user-attachments/assets/16bbc2cd-50bb-44ca-8ab1-9a0b5b086adb" />
 
 ### About Page
 
-![About Page](./project_screenshots/about_page\(1\).png)
+<img width="1599" height="728" alt="about_page(1)" src="https://github.com/user-attachments/assets/3ad1124a-87ea-4ede-b809-f55192f68c90" />
+<img width="1599" height="726" alt="about_page(2)" src="https://github.com/user-attachments/assets/6c80321a-b849-4bb0-be94-2cc016b0eec8" />
 
 ### Phishing Detection Example
 
-![Phishing Detection](./project_screenshots/negative_result.png)
+<img width="1599" height="724" alt="negative_result" src="https://github.com/user-attachments/assets/878c568d-db5f-44a2-b445-1708aeec49cb" />
 
 ### Safe URL Detection Example
 
-![Safe URL Detection](./project_screenshots/positive_result.png)
+<img width="1600" height="900" alt="positive result" src="https://github.com/user-attachments/assets/aecd315c-4aa4-47f0-98a1-a6bad5cefd6d" />
 
 ---
 
