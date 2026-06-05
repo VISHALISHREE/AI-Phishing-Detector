@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block title %}
+Analytics
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+<h1 class="cyber-heading">
+    🛡 Threat Intelligence Analytics
+</h1>
+
+<div class="analytics-grid">
+
+    <div class="stat-card">
+
+        <h2 class="cyber-heading">
+            Total Scans
+        </h2>
+
+        <h1>{{ total_scans }}</h1>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 class="cyber-heading">
+            Safe URLs
+        </h2>
+
+        <h1>{{ benign_count }}</h1>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h2 class="cyber-heading">
+            Phishing URLs
+        </h2>
+
+        <h1>{{ phishing_count }}</h1>
+
+    </div>
+
+</div>
+
+<div class="chart-container">
+
+    <canvas id="pieChart"></canvas>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const ctx =
+        document.getElementById("pieChart");
+
+    new Chart(ctx, {
+
+        type: "pie",
+
+        data: {
+
+            labels: [
+                "Safe URLs",
+                "Phishing URLs"
+            ],
+
+            datasets: [{
+
+                data: [
+                    {{ benign_count }},
+                    {{ phishing_count }}
+                ],
+
+                backgroundColor: [
+                    "#00ff99",
+                    "#ff4d4d"
+                ],
+
+                borderColor: "#ffffff",
+
+                borderWidth: 2
+
+            }]
+        },
+
+        options: {
+
+            responsive: true,
+
+            maintainAspectRatio: false,
+
+            plugins: {
+
+                legend: {
+
+                    position: "top",
+
+                    labels: {
+
+                        color: "white",
+
+                        font: {
+
+                            size: 14
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    });
+
+});
+
+</script>
+
+{% endblock %}

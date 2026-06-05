@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}
+History
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+<div class="history-header">
+
+    <h1 class="cyber-heading">
+        Scan History
+    </h1>
+
+    <a href="/export" class="export-btn">
+        ⬇ Download Report
+    </a>
+
+</div>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search URL..."
+        onkeyup="searchTable()"
+    >
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>URL</th>
+            <th>Prediction</th>
+            <th>Date & Time</th>
+        </tr>
+
+        {% for scan in scans %}
+
+        <tr>
+
+            <td>{{ scan[0] }}</td>
+
+            <td>{{ scan[1] }}</td>
+
+<td>
+
+{% if scan[2] == "phishing" %}
+
+<span class="badge-danger">
+    Phishing
+</span>
+
+{% else %}
+
+<span class="badge-safe">
+    Safe
+</span>
+
+{% endif %}
+
+</td>
+
+            <td>{{ scan[3] }}</td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</div>
+
+<script>
+
+function searchTable() {
+
+    let input =
+        document.getElementById("searchInput");
+
+    let filter =
+        input.value.toLowerCase();
+
+    let table =
+        document.querySelector("table");
+
+    let rows =
+        table.getElementsByTagName("tr");
+
+    for(let i = 1; i < rows.length; i++) {
+
+        let url =
+            rows[i].getElementsByTagName("td")[1];
+
+        if(url) {
+
+            let text =
+                url.textContent.toLowerCase();
+
+            rows[i].style.display =
+                text.includes(filter)
+                ? ""
+                : "none";
+        }
+    }
+}
+
+</script>
+
+{% endblock %}

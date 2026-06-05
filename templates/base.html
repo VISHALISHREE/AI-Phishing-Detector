@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>{% block title %}AI Phishing Detector{% endblock %}</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🛡 AI Phishing Detector
+    </div>
+
+    <div class="nav-links">
+
+        <a href="/dashboard">Dashboard</a>
+
+        <a href="/">Scanner</a>
+
+        <a href="/analytics">Analytics</a>
+
+        <a href="/history">History</a>
+
+        <a href="/about">About</a>
+
+    </div>
+
+</nav>
+
+    <!-- Page Content -->
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Particles JS -->
+
+    <script src="{{ url_for('static', filename='js/particles.min.js') }}"></script>
+
+    <script>
+
+    particlesJS("particles-js", {
+
+        particles: {
+
+            number: {
+                value: 120
+            },
+
+            color: {
+                value: "#00ffff"
+            },
+
+            shape: {
+                type: "circle"
+            },
+
+            opacity: {
+                value: 0.5
+            },
+
+            size: {
+                value: 3
+            },
+
+            line_linked: {
+
+                enable: true,
+
+                distance: 150,
+
+                color: "#00ffff",
+
+                opacity: 0.3,
+
+                width: 1
+
+            },
+
+            move: {
+
+                enable: true,
+
+                speed: 2
+
+            }
+        }
+    });
+
+    </script>
+
+<footer class="footer">
+
+    🛡 AI Phishing URL Detector |
+    Built with Flask & Machine Learning
+
+</footer>
+
+</body>
+
+</html>
+

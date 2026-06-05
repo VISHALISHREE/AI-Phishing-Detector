@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}
+Scanner
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>🛡 AI Phishing URL Detector</h1>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="url"
+            placeholder="Enter URL here..."
+            value="{{ entered_url }}"
+            required
+        >
+
+        <button type="submit">
+            Scan URL
+        </button>
+
+    </form>
+
+    {% if prediction %}
+
+<div class="result-card">
+
+    {% if prediction == "phishing" %}
+
+        <div class="status-icon">🚨</div>
+
+        <h2 class="risk-danger">
+            PHISHING DETECTED
+        </h2>
+
+    {% else %}
+
+        <div class="status-icon">✅</div>
+
+        <h2 class="risk-safe">
+            WEBSITE APPEARS SAFE
+        </h2>
+
+    {% endif %}
+
+    <div class="confidence-circle">
+
+        {{ confidence }}%
+
+    </div>
+
+    <p class="confidence-text">
+
+        Model Confidence
+
+    </p>
+
+</div>
+    
+    <h2 class="section-title">
+    🛡 Security Recommendations
+</h2>
+
+<div class="recommendation-box">
+
+    {% for item in recommendations %}
+
+        <p>✓ {{ item }}</p>
+
+    {% endfor %}
+
+</div>
+    {% endif %}
+
+</div>
+
+{% endblock %}

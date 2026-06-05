@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1 class="cyber-heading">
+        📊 Threat Intelligence Dashboard
+    </h1>
+
+    <div class="stats-grid">
+
+        <div class="card">
+
+            <h2 class="cyber-heading">
+                Total Scans
+            </h2>
+
+            <h1>{{ total_scans }}</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h2 class="cyber-heading">
+                Phishing URLs
+            </h2>
+
+            <h1>{{ phishing_count }}</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h2 class="cyber-heading">
+                Safe URLs
+            </h2>
+
+            <h1>{{ benign_count }}</h1>
+
+        </div>
+
+    </div>
+
+    <div class="recent-activity">
+
+        <h2 class="cyber-heading">
+            🕒 Recent Activity
+        </h2>
+
+        <table>
+
+            <tr>
+                <th>URL</th>
+                <th>Prediction</th>
+                <th>Time</th>
+            </tr>
+
+            {% for scan in recent_scans %}
+
+            <tr>
+
+                <td>{{ scan[0] }}</td>
+
+                <td>{{ scan[1] }}</td>
+
+                <td>{{ scan[2] }}</td>
+
+            </tr>
+
+            {% endfor %}
+
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}

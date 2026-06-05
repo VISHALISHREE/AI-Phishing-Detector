@@ -1,0 +1,8 @@
+The trained model files were excluded from GitHub because they exceed GitHub's file size limit.
+
+To regenerate the model:
+
+1. Run train_model.py
+2. This will create:
+   - tfidf_model.pkl
+   - tfidf_vectorizer.pkl
