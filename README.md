@@ -100,7 +100,7 @@ Classification Categories:
 
 ### Home Page
 
-![Home Page](./project_screenshots/scanner_homepage.png)
+<img width="1599" height="727" alt="scanner_homepage" src="https://github.com/user-attachments/assets/4a9cb365-e4bf-4833-933c-5c3a1e344b80" />
 
 ### Dashboard
 
