@@ -100,24 +100,31 @@ Classification Categories:
 
 ### Home Page
 
-![Home Page](project_screenshots/scanner_homepage.png)
+![Home Page](./project_screenshots/scanner_homepage.png)
 
-### Analytics Dashboard
+### Dashboard
 
-![Analytics Dashboard](project_screenshots/analytics_page.png)
+![Dashboard](./project_screenshots/dashboard_page.png)
+
+### Analytics
+
+![Analytics](./project_screenshots/analytics_page.png)
 
 ### Search History
 
-![Search History](project_screenshots/search_history.png)
+![Search History](./project_screenshots/search_history.png)
 
 ### About Page
 
-![About Page](project_screenshots/about_page\(1\).png)
+![About Page](./project_screenshots/about_page\(1\).png)
 
-### Detection Result
+### Phishing Detection Example
 
-![Detection Result](project_screenshots/positive%20result.png)
+![Phishing Detection](./project_screenshots/negative_result.png)
 
+### Safe URL Detection Example
+
+![Safe URL Detection](./project_screenshots/positive%20result.png)
 
 ---
 
