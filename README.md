@@ -117,6 +117,7 @@ Classification Categories:
 ### About Page
 
 <img width="1599" height="728" alt="about_page(1)" src="https://github.com/user-attachments/assets/3ad1124a-87ea-4ede-b809-f55192f68c90" />
+
 <img width="1599" height="726" alt="about_page(2)" src="https://github.com/user-attachments/assets/6c80321a-b849-4bb0-be94-2cc016b0eec8" />
 
 ### Phishing Detection Example
