@@ -124,7 +124,7 @@ Classification Categories:
 
 ### Safe URL Detection Example
 
-![Safe URL Detection](./project_screenshots/positive%20result.png)
+![Safe URL Detection](./project_screenshots/positive_result.png)
 
 ---
 
