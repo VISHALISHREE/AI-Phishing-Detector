@@ -96,21 +96,28 @@ Classification Categories:
 
 ## Screenshots
 
+## Screenshots
+
 ### Home Page
 
-Add scanner_homepage.png
+![Home Page](project_screenshots/scanner_homepage.png)
 
 ### Analytics Dashboard
 
-Add analytics_page.png
+![Analytics Dashboard](project_screenshots/analytics_page.png)
 
 ### Search History
 
-Add search_history.png
+![Search History](project_screenshots/search_history.png)
 
 ### About Page
 
-Add about_page.png
+![About Page](project_screenshots/about_page\(1\).png)
+
+### Detection Result
+
+![Detection Result](project_screenshots/positive%20result.png)
+
 
 ---
 
