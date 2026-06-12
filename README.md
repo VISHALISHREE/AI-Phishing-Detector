@@ -6,8 +6,8 @@ AI Phishing URL Detector is a machine learning-based web application that identi
 
 This project was developed as an academic and portfolio project to demonstrate the application of Machine Learning in Cybersecurity.
 
-Public GitHub repository
-+ Live deployed website(https://ai-phishing-detector-uzhm.onrender.com)
++ Public GitHub repository
++ Live deployed website (https://ai-phishing-detector-uzhm.onrender.com)
 + Professional branding
 
 ---
